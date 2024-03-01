@@ -1,0 +1,59 @@
+html{
+    font-size: 62.5;
+}
+body{
+    font-size: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+    text-align: center;
+    font-size: 2rem;
+}
+
+h2 {
+    text-align: center;
+}
+
+.contenido {
+    background-image: url(./fondo.jpg);
+    
+    text-align: center;
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    gap: 2rem;
+    justify-content:  center;
+    gap: 5rem;
+}
+
+.servicios {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: gray;
+    border-radius: 1rem;
+    border-style: solid;
+}
+
+.dg_nav{
+    background-color: gray;
+}
+
+.navegacion_principal{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.navegacion_principal a{
+    color: white;
+    text-decoration: none;
+}

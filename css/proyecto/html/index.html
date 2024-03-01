@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ColombiaParaTi.com</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Playpen+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="contenedor-principal"> <!--Contenedor del menu de navegacion-->
+    <header id="inicio"><h1>Colombia Para Ti</h1></header>
+
+    <nav id="menu-principal" class="menu-fijo"> <!--Menu-->
+        <ul class="menu">
+            <a href="#nosotros">Nosotros</a>
+            <a href="#destinos">Destinos</a>
+            <a href="#alojamiento">Alojamiento</a>
+            <a href="#mapas">Mapas</a>
+            <a href="#reservas">Reservas</a>
+            <a href="#contacto">Contacto</a>
+            <a href="../html/english-index.html">English</a>
+        </ul>
+    </nav>
+
+    <section id="nosotros"><!--Contenido sobre la empresa-->
+        <h2>Nosotros</h2>
+        <p class="descripcion">En Colombia Para Ti, estamos comprometidos en ofrecerte una experiencia inolvidable a través de la belleza 
+            y diversidad de Colombia. Somos apasionados por nuestro país y estamos deseando compartir contigo los tesoros que esta tierra tiene para ofrecer.</p>
+        <h3>Nuestra Misión</h3>
+        <p>Nuestra misión es brindarte una experiencia de viaje única, auténtica y enriquecedora, enriqueciendo tu conocimiento sobre Colombia, su cultura, su gente 
+            y su riqueza natural. Estamos aquí para hacer que tu viaje sea inolvidable, desde el momento en que aterrizas hasta que te despides.</p>
+        <h3>Nuestros Servicios</h3>
+        <ul>
+            <li>Tours Culturales: Sumérgete en la historia y la cultura colombiana a través de visitas a museos, sitios históricos y festivales locales.</li>
+            <li>Naturaleza y Aventura: Descubre la diversidad de la biodiversidad colombiana con excursiones a parques nacionales, selvas y playas paradisíacas.</li>
+            <li>Alojamiento: Te ayudamos a encontrar las mejores opciones de alojamiento según tus preferencias y presupuesto.</li>
+        </ul>
+    </section>
+    
+    <div class="destino"> 
+        <h2>Destinos Turisticos</h2>
+    </div>
+    
+    <section id="destinos"> <!--Contenedor del menu de destinos turisticos-->
+
+        <section class="destino-medellin">
+        <h3>Medellin</h3>
+
+        <a href="../html/medellin.html" type="--Boton"><img src="../imagenes/medellin.jpg"></a>
+        </section>
+
+        <br>
+
+        <section class="destino-cartagena">
+        <h3>Cartagena</h3>
+
+        <a href="../html/cartagena.html" type="--Boton"><img src="../imagenes/cartagena.jpg"></a>
+        </section>
+
+        <br>
+
+        <section class="destino-san-andres">
+        <h3>San Andres</h3>
+
+        <a href="../html/san_andres.html" type="--Boton"><img src="../imagenes/san-andres.jpg"></a>
+        </section>
+
+        <br>
+
+        <section class="destino-leticia">
+        <h3>Leticia</h3>
+
+        <a href="../html/leticia.html" type="--Boton"><img src="../imagenes/leticia.jpg"></a>
+        </section>
+    </section>
+    <hr>
+    <section id="alojamiento"> <!--Link para reservar alojamientos-->
+        <h2>Alojamiento y Vuelos</h2>
+        
+        <p>En esta seccion puedes programar y reservar tu Alojamiento y tus vuelos</p>
+        <br>
+        <a class="hotel" target="_blank" href="https://www.booking.com/index.es.html?aid=356980label=gog235jc-1DCAMoMkIIbWVkZWxsaW5IClgDaDKIAQGYAQq4ARnIAQ_YAQPoAQH4AQKIAgGoAgO4Ap2q6akGwAIB0gIkYzE3MGIwMGYtYTIwZC00NTNmLWE5NjktMTk2ODU2MmIzNTM32AIE4AIB&sid=7ea518f46cf771eac20bbb2e2849c782&click_from_logo=1">Hoteles, Click aqui</a>
+        <a class="vuelo" target="_blank" href="https://www.avianca.com/es/">Vuelos, Click aqui</a>
+    </section>
+    <hr>
+    <section id="mapas"> <!--herramienta para los usuarios de GPS de google maps-->
+        <h2>Mapas</h2>
+        <p>Aqui puedes usar la herramienta de Google Maps para Ubicarte mas facil</p>
+        <div class="GPS">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8144407.576392688!2d-79.63486007926359!3d4.636583595148106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e15a43aae1594a3%3A0x9a0d9a04eff2a340!2sColombia!5e0!3m2!1ses!2sco!4v1698842232272!5m2!1ses!2sco" 
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <hr>
+    <section id="reservas"> <!--Formulario para la reserva-->
+        <h2>Reservas</h2>
+        <p>Completa este formulario y te enviaremos una cotizacion detallada para tu guia turistico</p>
+        <form class="formulario">
+            <label for="nombres"></label>
+            <input type="text" name="nombres" id="nombres" placeholder="Nombres">
+            <label for="apellidos"></label>
+            <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos">
+            <br>
+            <label for="correo"></label>
+            <input type="email" name="email" id="email" placeholder="coreo@correo.com">
+            <label for="telefono"></label>
+            <input type="tel" name="telefono" id="telefono" placeholder="Telefono">
+            <br>
+            <label for="fecha_llegada">Fecha de llegada:</label>
+            <input type="date" name="fecha_llegada" id="fecha_llegada">
+            <br>
+            <label for="fecha_salida">Fecha de salida:</label>
+            <input type="date" name="fecha_salida" id="fecha_salida">
+            <br>
+            <label for="personas">Numero de Visitantes:</label>
+            <input type="number" name="personas" id="personas" placeholder="2">
+            <br>
+            <label for="mascotas">Traes mascotas?:</label>
+            <input type="radio" name="mascotas" id="mascotas_si" value="si">
+            <label for="mascotas_si">Si</label>
+            <input type="radio" name="mascotas" id="mascotas_no" value="no">
+            <label for="mascotas_no">No</label>
+            <br>
+            <label for="destino">Cual es tu Destino a visitar?</label>
+            <br>
+            <input type="radio" name="destino" id="destino_medellin" value="Medellin">
+            <label for="medellin">Medellin</label>
+            <input type="radio" name="destino" id="destino_Cartagena" value="Cartagena">
+            <label for="medellin">Cartagena</label>
+            <input type="radio" name="destino" id="destino_San-Andres" value="San-Andres">
+            <label for="medellin">San Andres</label>
+            <input type="radio" name="destino" id="destino_Leticia" value="Leticia">
+            <label for="medellin">Leticia</label>
+            <br>
+            <textarea name="comentaros" id="comentaros" cols="60" rows="10" placeholder="Agrega tus comentarios Aqui..."></textarea>
+            <input type="submit" name="enviar" id="enviar" value="Enviar">
+        </form>
+    </section>
+    <hr>
+    <section id="contacto"><!--Publicacion de redes sociales para el contacto directo y al final icono de correo funcional-->
+        <h2>Nuestras Redes Sociales</h2>
+
+        <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><img src="../imagenes/fb-logo.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="../imagenes/insta-logo.png" alt="Instagram"></a>
+        <a href="https://twitter.com/?lang=es" target="_blank"><img src="../imagenes/tw-logo.png" alt="Twiter"></a>
+        <a href="mailto:andresfgomez28@outlook.com" target="_blank" ><img src="../imagenes/correo.png" alt=""></a>
+    </section>
+    <hr>
+    <footer><!--Boton para regresar al inicio sin hacer scroll, se agrega el copyright-->
+        <a href="#inicio">Inicio</a>
+        <p>&COPY;Copyright - 2023. Turismo Colombia</p>
+    </footer>
+    </div>
+</body>
+</html>

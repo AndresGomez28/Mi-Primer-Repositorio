@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" href="./styles.css">
+    <title>Hogwarts Inicio</title>
+    
+    <video autoplay loop muted>
+        <source src="./video/video-2.mp4" type="video/mp4">
+    </video>
+</head>
+
+<body>
+
+    <header>
+        <h1>Registro</h1>
+    </header>
+
+    <h2>Ingresa tus datos para continuar</h2>
+
+    <section id="registro">
+
+        <form id="formulario-hogwarts">
+            <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
+            <input type="number" id="edad" placeholder="Ingrese su edad" required>
+            <input type="text" id="padre" placeholder="Ingrese el nombre de su padre" required>
+            <input type="text" id="madre" placeholder="Ingrese el nombre de su madre" required>
+            <select id="linajes" required>
+                <option value="select">Seleccione su Linaje</option>
+                <option value="sangre-pura">Sangre Pura</option>
+                <option value="mestizo">Mestizo</option>
+                <option value="muggle">Muggle</option>
+            </select>
+
+            <select id="cualidad" required>
+                <option value="select">Seleccione su Cualidad</option>
+                <option value="valor">Valor</option>
+                <option value="fuerza">Fuerza</option>
+                <option value="audacia">Audacia</option>
+                <option value="justicia">Justicia</option>
+                <option value="lealtad">Lealtad</option>
+                <option value="paciencia">Paciencia</option>
+                <option value="creatividad">Creatividad</option>
+                <option value="erudicion">Erudición</option>
+                <option value="inteligencia">Inteligencia</option>
+            </select>
+            <input type="submit" id="enviar" value="Enviar">
+        </form>
+    </section>
+
+    <section id="datos-estudiante" style="display: none;">
+        <h2>Datos del Estudiante:</h2>
+        <p id="info-nombre"></p>
+        <p id="info-edad"></p>
+        <p id="info-padre"></p>
+        <p id="info-madre"></p>
+        <p id="info-linaje"></p>
+        <p id="info-casa"></p>
+    </section>
+
+    <script src="./js/script_estudiante.js"></script>
+    <script src="./js/script_registro.js"></script>
+</body>
+
+</html>
