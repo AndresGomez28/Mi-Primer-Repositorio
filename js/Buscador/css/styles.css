@@ -1,0 +1,46 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+    background-color: black;
+    display: flex;
+}
+
+.contenedor{
+    margin: auto;
+}
+
+.logo{
+    display: block;
+    
+}
+
+.buscador{
+    width: 100%;
+    padding: 1rem 5rem;
+    border-radius: 1rem;
+}
+
+.card{
+    width: 30rem;
+    border-style: solid;
+    margin: 5rem;
+    text-align: center;
+    padding: 1.5rem;
+    border-color: white;
+}
+
+.card-body{
+    background-color: white;
+    padding: 1.5rem;
+}
+
+.btn{
+    background-color: blue;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: white;
+}

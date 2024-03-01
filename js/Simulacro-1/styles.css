@@ -1,0 +1,31 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+    background-color: rgb(16, 0, 52);
+}
+
+.logo{
+    text-align: center;
+}
+
+.spaceX{
+    height: 20rem;
+    width: 60rem;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10rem;
+    height: 100%;
+    padding: 10rem;
+    text-align: center;
+}
+
+.card{
+    gap: 3rem;
+    border-radius: 1rem;
+}

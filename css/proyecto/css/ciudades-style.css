@@ -1,0 +1,178 @@
+html {
+    font-size: 62.5;
+}
+
+body {
+    background-image: url(../imagenes/fondo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 16px;
+    font-family: 'Playpen Sans', cursive;
+    min-height: 100vh;
+    width: 95%;
+}
+
+header {
+    padding: 1rem;
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+    justify-content: center;
+    text-shadow: 0.4rem 0 gray, 0.4rem 0 gray,
+    0.4rem 0 gray, 0.4rem 0 gray;
+}
+
+p {
+    color: black;
+    text-shadow: 0.1rem 0 gray, 0.1rem 0 gray, 
+    0.1rem 0 gray, 0.1rem 0 gray ;
+}
+
+.contenedor-principal .video {
+    display: grid;
+    justify-content: center;
+}
+
+.contenedor-principal h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+    text-shadow: 0.1rem 0 gray, 0.1rem 0 gray,
+    0.1rem 0 gray, 0.1rem 0 gray;
+}
+
+.video iframe {
+    width: 50rem;
+    height: 30rem;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+.grid-container {
+    padding: 1rem 2rem;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+
+.actividad1 {
+    border: 0.1rem solid black;
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.actividad1 h3 {
+    grid-column: 1;
+    text-align: center;
+}
+
+.actividad1 p {
+    grid-column: 1;
+    text-align: left;
+}
+
+.actividad1 img {
+    padding: 1rem;
+    width: 30rem;
+    height: 25rem;
+    grid-column: 2;
+}
+
+.actividad2 {
+    border: 0.1rem solid black;
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.actividad2 h3 {
+    grid-column: 2;
+    text-align: center;
+}
+
+.actividad2 p {
+    grid-column: 2;
+    text-align: right;
+}
+
+.actividad2 img {
+    padding: 1rem;
+    width: 30rem;
+    height: 25rem;
+    grid-column: 1;
+}
+
+.actividad3 {
+    border: 0.1rem solid black;
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.actividad3 h3 {
+    grid-column: 1;
+    text-align: center;
+}
+
+.actividad3 p {
+    grid-column: 1;
+    text-align: left;
+}
+
+.actividad3 img {
+    padding: 1rem;
+    width: 30rem;
+    height: 25rem;
+    grid-column: 2;
+}
+
+.actividad4 {
+    border: 0.1rem solid black;
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.actividad4 h3 {
+    grid-column: 2;
+    text-align: center;
+}
+
+.actividad4 p {
+    grid-column: 2;
+    text-align: right;
+}
+
+.actividad4 img {
+    padding: 1rem;
+    width: 30rem;
+    height: 25rem;
+    grid-column: 1;
+}
+
+footer {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    text-shadow: 0.1rem 0 gray, 0.1rem 0 gray,
+    0.1rem 0 gray, 0.1rem 0 gray;
+    background-color: gainsboro;
+    border-radius: 1rem;
+    border-style: solid;
+    padding: 0.5rem;
+    position: fixed;
+    bottom: 1rem;
+}
+
+footer a:hover {
+    opacity: 0.8;
+}

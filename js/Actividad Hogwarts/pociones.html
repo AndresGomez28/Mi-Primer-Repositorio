@@ -1,0 +1,49 @@
+#<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" href="./styles.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">    <title>Clase de Pociones</title>
+
+    <video autoplay loop muted>
+        <source src="./video/video-3.mp4" type="video/mp4">
+    </video>
+</head>
+
+<body>
+
+    <section id="clase-pociones">
+        <h2>Clase de Pociones / Felix Felicis</h2>
+        <p>Selecciona los ingredientes correctos para la poción.</p>
+        <form id="formulario-pociones">
+            <select id="crisopos" required>
+                <option value="select">crisopos</option>
+                <option value="3">3</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+            <select id="tallos-descurainia-sophia" required>
+                <option value="select">Tallos Descurainia Sophia</option>
+                <option value="3">3</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+            <select id="minutos" required>
+                <option value="select">Minutos de preparacion</option>
+                <option value="5">5</option>
+                <option value="8">8</option>
+                <option value="4">4</option>
+            </select>
+            <input type="submit" id="crear" value="Crear">
+        </form>
+    </section>
+
+    <section id="resultado-pocion">
+        <h2>Resultado:</h2>
+        <p id="resultado"></p>
+    </section>
+
+    <script src="./js/script_estudiante.js"></script>
+    <script src="./js/script_pociones.js"></script>
+</body>
+
+</html>
