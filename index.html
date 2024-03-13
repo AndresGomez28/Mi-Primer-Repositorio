@@ -1,94 +1,355 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de servicios</title>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-</head>
-<body>
-    <!-- Encabezado principal -->
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
 
-    <header class="headerito">
-        <h1>Andres Felipe Gomez</h1>
-        <img src="./imagenes/yo.png" class="foto">
-    </header>
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
 
-    <!-- Subtitulo de banner -->
-    <section>
-        <div class="hero">
-            <div class="hero-contenido">
-                <h2>Desarrollador Web en Entrenamiento</h2>
-                <p>
-                    Hola, soy un desarrollador BackEnd en proceso de formacion en Riwi. <br />
-                    Actualmente trabajando en HTML - CSS - JavaScript - MySQL - NodeJS - MongoDB
-                </p>
-                <br />
-                <p>Medellin - Antioquia</p>
-            </div>
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Andres Gomez | Desarrollador en Entrenamiento</title>
+  </head>
+
+  <body>
+    <nav>
+      <h1>Andres Felipe Gomez</h1>
+      <ul class="navigation">
+        <li><a href="#about" class="nav-link">Sobre Mi</a></li>
+        <li><a href="#skills" class="nav-link">Habilidades</a></li>
+        <li><a href="#projects" class="nav-link">Proyectos</a></li>
+        <li><a href="#contact" class="nav-link">Contacto</a></li>
+      </ul>
+      <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+      </button>
+</nav>
+
+<section class="hero" id="about">
+  <img
+    src="./assets/images/yo.png"
+    alt="jane-doe"
+    loading="lazy"
+    class="hero-img"
+  />
+  <div class="bio animate__animated animate__shakeX">
+    <h2 class="bio-title">Sobre Mi</h2>
+    <p class="bio-text">
+      Hola, soy un desarrollador BackEnd en proceso de formacion en Riwi.
+      Actualmente trabajando en HTML - CSS - JavaScript - MySQL - NodeJS - MongoDB
+    </p>
+  </div>
+</section>
+
+<section class="more-about">
+  <h2>Mas Sobre Mi</h2>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+    nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
+    autem deleniti cupiditate molestias quis unde quae totam porro dicta
+    iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
+    nostrum dolor minus, libero delectus praesentium perferendis
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+    consequuntur labore? Ea totam voluptas amet!
+  </p>
+</section>
+
+<section class="skills" id="skills">
+  <h2 class="skill-header">Mis Habilidades Son</h2>
+
+  <div class="skills-wrapper">
+    <div class="first-set animate__animated animate__pulse">
+      <img
+        src="./assets/icons/icons8-html-5.svg"
+        alt=""
+        loading="lazy"
+        class="icon icon-card"
+      />
+      <img
+        src="./assets/icons/icons8-css3.svg"
+        alt=""
+        loading="lazy"
+        class="icon icon-card"
+      />
+      <img
+        src="./assets/icons/icons8-javascript.svg"
+        alt=""
+        loading="lazy"
+        class="icon icon-card"
+      />
+    </div>
+
+    <div class="second-set animate__animated animate__pulse">
+      <img
+        src="./assets/icons/icons8-nodo-js.svg"
+        alt=""
+        loading="lazy"
+        class="icon icon-card"
+      />
+      <img
+        src="assets/icons/icons8-react-native.svg"
+        alt=""
+        loading="lazy"
+        class="icon icon-card"
+      />
+      <img
+        src="./assets/icons/icons8-git.svg"
+        alt=""
+        loading="lazy"
+        class="icon icon-card"
+      />
+    </div>
+  </div>
+</section>
+
+<section class="projects" id="projects">
+  <h2 class="projects-title">Algunos de mis proyectos</h2>
+  <div class="projects-container">
+    <div class="project-container project-card">
+      <img
+        src="./assets/icons/icons8-html-5.svg"
+        alt="expense-tracker"
+        loading="lazy"
+        class="project-pic"
+      />
+      <h3 class="project-title">HTML</h3>
+      <p class="project-details">
+        Blog
+      </p>
+      <a href="./assets/css_proyects/Blog/index.html" target="_blank" class="project-link">Ver Proyecto</a>
+    </div>
+    <div class="project-container project-card">
+      <img
+        src="./assets/icons/icons8-html-5.svg"
+        alt="expense-tracker"
+        loading="lazy"
+        class="project-pic"
+      />
+      <h3 class="project-title">HTML</h3>
+      <p class="project-details">
+        Portafolio
+      </p>
+      <a href="./assets/css_proyects/portaolio/index.html" target="_blank" class="project-link">Ver Proyecto</a>
+    </div>
+    <div class="project-container project-card">
+      <img
+        src="./assets/icons/icons8-html-5.svg"
+        alt="expense-tracker"
+        loading="lazy"
+        class="project-pic"
+      />
+      <h3 class="project-title">HTML</h3>
+      <p class="project-details">
+        Turismo
+      </p>
+      <a href="./assets/css_proyects/proyecto/html/index.html" target="_blank" class="project-link">Ver Proyecto</a>
+    </div>
+
+    <div class="project-container project-card">
+      <img
+        src="./assets/icons/icons8-javascript.svg"
+        alt="netflic-clone"
+        loading="lazy"
+        class="project-pic"
+      />
+      <h3 class="project-title">JavaScript</h3>
+      <p class="project-details">
+        Cine Colombia
+      </p>
+      <a href="./assets/js_proyects/cineColombiaPlantilla/index.html" target="_blank" class="project-link">Ver Proyecto</a>
+    </div>
+    <div class="project-container project-card">
+      <img
+        src="./assets/icons/icons8-javascript.svg"
+        alt="netflic-clone"
+        loading="lazy"
+        class="project-pic"
+      />
+      <h3 class="project-title">JavaScript</h3>
+      <p class="project-details">
+        Buscador
+      </p>
+      <a href="./assets/js_proyects/Buscador/index.html" target="_blank" class="project-link">Ver Proyecto</a>
+    </div>
+    <div class="project-container project-card">
+      <img
+        src="./assets/icons/icons8-javascript.svg"
+        alt="netflic-clone"
+        loading="lazy"
+        class="project-pic"
+      />
+      <h3 class="project-title">JavaScript</h3>
+      <p class="project-details">
+        Macondo
+      </p>
+      <a href="./assets/js_proyects/Taller-Macondo/index.html" target="_blank" class="project-link">Ver Proyecto</a>
+    </div>
+    <div class="project-container project-card">
+      <img
+        src="./assets/icons/icons8-javascript.svg"
+        alt="netflic-clone"
+        loading="lazy"
+        class="project-pic"
+      />
+      <h3 class="project-title">JavaScript</h3>
+      <p class="project-details">
+        SpaceX
+      </p>
+      <a href="./assets/js_proyects/Simulacro-1/index.html" target="_blank" class="project-link">Ver Proyecto</a>
+    </div>
+    <div class="project-container project-card">
+      <img
+        src="./assets/icons/icons8-javascript.svg"
+        alt="netflic-clone"
+        loading="lazy"
+        class="project-pic"
+      />
+      <h3 class="project-title">JavaScript</h3>
+      <p class="project-details">
+        Hogwarts
+      </p>
+      <a href="./assets/js_proyects/Actividad Hogwarts/inicio.html" target="_blank" class="project-link">Ver Proyectos</a>
+    </div>
+
+    <div class="project-container project-card">
+      <img
+        src="./assets/icons/github-mark.png"
+        alt="greeny-earth"
+        loading="lazy"
+        class="project-pic"
+      />
+      <h3 class="project-title">Repositorios GitHub</h3>
+      <p class="project-details">
+        Selecciona un repositorio
+      </p>
+      <a href="https://github.com/AndresGomez28/ejercicios_SQL-1.git" target="_blank" class="project-link">Ejercicios SQL</a>
+      <br>
+      <br>
+      <a href="https://github.com/AndresGomez28/pruebas_DB.git" target="_blank" class="project-link">Ejercicios DB</a>
+      <br>
+      <br>
+      <a href="https://github.com/AndresGomez28/pruebas_Node.git" target="_blank" class="project-link">Ejercicios Node</a>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Contactame</h2>
+  <div class="contact-form-container">
+    <div class="contact-form">
+      <form action="https://formspree.io/f/xyylngw" method="POST">
+        <div class="form-control">
+          <label for="name">Nombre</label>
+          <input
+            type="text"
+            id="name"
+            name="sender-name"
+            placeholder="Ingrese su nombre"
+            class="input-field"
+            required
+          />
         </div>
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="sender-email"
+            placeholder="Ingrese su Email"
+            class="input-field"
+            required
+          />
+        </div>
+        <div class="form-control">
+          <label for="message">Mensaje</label>
+          <textarea
+            id="message"
+            cols="60"
+            rows="10"
+            placeholder="Escribe tu mensaje aqui..."
+            name="message"
+            class="input-field"
+            required
+          ></textarea>
+        </div>
+        <input
+          type="submit"
+          value="Enviar"
+          id="submit-btn"
+          class="submit-btn"
+        />
+      </form>
+    </div>
+  </div>
+</section>
 
-    </section>
-    
-    <main>
-        <h2>Proyectos</h2>
-        <section class="proyectos">
-            <section class="proyectos-detalle">
-                <h3>HTML - CSS</h3>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-code" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M7 8l-4 4l4 4" />
-                    <path d="M17 8l4 4l-4 4" />
-                    <path d="M14 4l-4 16" />
-                    </svg>
-                    <br>
-                <a href="./html-css.html" class="btn-info">Ver Proyectos</a>
-            </section>
+<div class="socials">
+  <a href="https://twitter.com/?lang=es" target="_blank"
+    ><img
+      src="./assets/icons/icons8-twitter-circled.gif"
+      alt="Twitter"
+      loading="lazy"
+      class="socicon"
+  /></a>
+  <a href="https://www.instagram.com/" target="_blank"
+    ><img
+      src="./assets/icons/icons8-instagram.gif"
+      alt="Instagram"
+      loading="lazy"
+      class="socicon"
+  /></a>
+  <a href="https://co.linkedin.com/" target="_blank"
+    ><img
+      src="./assets/icons/icons8-linkedin-circled.gif"
+      alt="Linkedin"
+      loading="lazy"
+      class="socicon"
+  /></a>
+  <a href="https://github.com/" target="_blank"
+    ><img src="./assets/icons/icons8-github.gif" alt="Github" class="socicon"
+  /></a>
 
-            <section class="proyectos-detalle">
-                <h3>JavaScript</h3>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-javascript" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
-                    <path d="M7.5 8h3v8l-2 -1" />
-                    <path d="M16.5 8h-2.5a.5 .5 0 0 0 -.5 .5v3a.5 .5 0 0 0 .5 .5h1.423a.5 .5 0 0 1 .495 .57l-.418 2.93l-2 .5" />
-                </svg>
-                <br>
-                <a href="./js.html" class="btn-info">Ver Proyectos</a>
-            </section>
+<i class="scroll-up" id="scroll-up"
+    ><img
+      src="./assets/icons/icons8-upward-arrow.gif"
+      class="socicon up-arrow"
+      alt="scroll-up"
+/></i>
 
-            <section class="proyectos-detalle">
-                <h3>Repositorios</h3>
-                <img src="./github-mark.png" style="height: 10rem;">
-                <p>Selecciona un Repositorio</p>
-                <p class="git">
-                    <a href="https://github.com/AndresGomez28/ejercicios_SQL-1.git" target="_blank">Ejercicios SQL</a>
-                    <br>
-                    <br>
-                    <a href="https://github.com/AndresGomez28/pruebas_DB.git" target="_blank">Ejercicios DB</a>
-                    <br>
-                    <br>
-                    <a href="https://github.com/AndresGomez28/pruebas_Node.git" target="_blank">Ejercicios Node</a>
-                </p>
-            </section>
-        </section>
-    </main>
+    <!-- Website scripts -->
+    <script src="./assets/js/app.js"></script>
 
-    <footer>
-        <section id="contacto">
-            <h2>Contacto</h2>
-    
-            <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><img src="./imagenes/fb-logo.png" alt="Facebook"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="./imagenes/insta-logo.png" alt="Instagram"></a>
-            <a href="https://twitter.com/?lang=es" target="_blank"><img src="./imagenes/tw-logo.png" alt="Twiter"></a>
-            <a href="mailto:andresfgomez28@outlook.com" target="_blank" ><img src="./imagenes/correo.png" alt=""></a>
-        </section>
-
-
-        <p>Made By Andres Gomez - Copyright </p>
-    </footer>
-    
-</body>
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
