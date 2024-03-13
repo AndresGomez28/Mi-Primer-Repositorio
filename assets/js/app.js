@@ -1,4 +1,4 @@
-// scroll to top functionality
+// scroll arriba
 const scrollUp = document.querySelector("#scroll-up");
 
 scrollUp.addEventListener("click", () => {
@@ -9,7 +9,7 @@ scrollUp.addEventListener("click", () => {
   });
 });
 
-// Nav hamburgerburger selections
+// Nav menu hamburguesa
 
 const burger = document.querySelector("#burger-menu");
 const ul = document.querySelector("nav ul");
@@ -19,7 +19,7 @@ burger.addEventListener("click", () => {
   ul.classList.toggle("show");
 });
 
-// Close hamburger menu when a link is clicked
+// Cerrar menu hamburguesa
 
 // Select nav links
 const navLink = document.querySelectorAll(".nav-link");
@@ -29,4 +29,3 @@ navLink.forEach((link) =>
     ul.classList.remove("show");
   })
 );
-
