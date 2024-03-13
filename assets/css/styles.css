@@ -29,16 +29,19 @@ html {
   /* border: 2px solid red; */
 }
 
+/* Estilo para listas no ordenadas */
 ul {
   list-style-type: none;
 }
 
+/* Estilo global para enlaces, incluyendo color, transición y eliminación del subrayado */
 a {
   text-decoration: none;
   color: var(--primary-color);
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
+/* Estilo para enlaces al pasar el mouse: cambio de color, escala y sombra */
 a:hover {
   text-decoration: none;
   color: var(--secondary-color);
@@ -46,10 +49,12 @@ a:hover {
   box-shadow: 0px 0px 16px 0px var(--primary-color);
 }
 
+/* Estilo básico para el cuerpo del documento */
 body {
   font-family: var(--font-family);
 }
 
+/* Estilos para la barra de navegación */
 nav {
   position: sticky;
   top: 0;
@@ -76,6 +81,7 @@ nav a:hover {
   border-bottom: 2px solid var(--secondary-color);
 }
 
+/* Estilo para la lista de navegación y sus elementos */
 nav ul {
   display: flex;
   gap: 1.9rem;
@@ -85,6 +91,7 @@ nav ul li {
   font-weight: var(--bold-font);
 }
 
+/* Estilos para el menú burger (menú de hamburguesa) */
 .burger-menu {
   color: var(--primary-color);
   font-size: 2rem;
@@ -159,6 +166,7 @@ nav ul li {
   height: 11.25rem;
 }
 
+/* Estilos para tarjetas de habilidades y proyectos */
 .icon-card {
   background-color: #fff;
   border-radius: 11px;
@@ -322,6 +330,7 @@ footer {
   height: 3rem;
 }
 
+/* Estilos responsivos para dispositivos de diferentes tamaños */
 @media screen and (max-width: 720px) {
   /*changes reflects on screen with a width of 720px and below*/
   nav {
