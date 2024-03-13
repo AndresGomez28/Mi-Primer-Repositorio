@@ -6,7 +6,7 @@
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
-  --bg-color: #fcfcfc;
+  --bg-color: #f0f0f0;
   --primary-color: #64008c;
   --secondary-color: #ff7235;
   --primary-shadow: #8b8eaf;
@@ -36,6 +36,7 @@ ul {
 
 /* Estilo global para enlaces, incluyendo color, transición y eliminación del subrayado */
 a {
+  padding: 4px;
   text-decoration: none;
   color: var(--primary-color);
   transition: color 0.3s ease, transform 0.3s ease;
@@ -46,7 +47,6 @@ a:hover {
   text-decoration: none;
   color: var(--secondary-color);
   transform: scale(1.2);
-  box-shadow: 0px 0px 16px 0px var(--primary-color);
 }
 
 /* Estilo básico para el cuerpo del documento */
@@ -108,11 +108,14 @@ nav ul li {
   gap: 2.5rem;
   max-width: 68.75rem;
   margin: auto;
+  padding: 3rem 0;
 }
 
 .hero img {
-  height: 37.5rem;
-  width: 37.5rem;
+  height: 38rem;
+  width: 35rem;
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.6);
 }
 
 .bio {
@@ -133,7 +136,8 @@ nav ul li {
 
 .more-about {
   background-color: var(--bg-color);
-  padding: 1rem 6rem;
+  padding: 3rem 8rem;
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
 }
 
 .more-about h2 {
@@ -151,6 +155,7 @@ nav ul li {
   margin: auto;
   text-align: center;
   margin-top: 2.5rem;
+  padding: 4rem 0;
 }
 
 .skill-header {
@@ -177,17 +182,18 @@ nav ul li {
 
 .projects {
   background-color: var(--bg-color);
-  padding: 32px 0;
+  padding: 5rem 0;
   margin-top: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
 }
 
 .project-pic {
-  width: 65%;
-  height: 60%;
+  width: 100%;
+  height: 100%;
 }
 
 .projects-container {
@@ -238,6 +244,7 @@ nav ul li {
 
 .contact {
   margin-top: 2rem;
+  padding: 5rem 0 2rem 0;
 }
 
 .contact h2 {
@@ -266,6 +273,7 @@ nav ul li {
 
 .contact-form-container .input-field {
   width: 100%;
+  padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 5px;
@@ -349,7 +357,7 @@ footer {
     transition: transform 0.5s ease-in;
   }
 
-   nav ul li {
+  nav ul li {
     margin: 8px;
   }
 
@@ -368,17 +376,17 @@ footer {
   }
 
   .hero img {
-        height: 37.5rem;
+        height: 34rem;
         width: 30rem;
     }
 
   .bio {
-    margin-top: -7rem;
-    width: 20.5rem;
+    margin-top: 5rem;
+    width: 25rem;
   }
 
   .more-about {
-    margin-top: 2rem;
+    margin-top: rem;
     padding: 1rem 3.5rem;
   }
 
@@ -412,20 +420,19 @@ footer {
 
 @media screen and (max-width: 420px) {
   .hero img {
-    height: 37.5rem;
-    width: 23rem;
+    height: 25rem;
+    width: 22rem;
   }
 
   .bio {
     width: 18.3rem;
   }
 
-  .contenedor-proyecto {
-    width: 17.875rem;
+  .proyect-container {
+    width: 10rem;
   }
 
-  .contenedor-formulario-de-contacto{
+  .contact-form-container{
     max-width: 17.75rem;
   }
 } 
-
