@@ -1,36 +1,48 @@
-html{
+html {
     background-color: lightblue;
-    font-size: 62.05;
+    /* font-size: 62.05%; */
 }
-body{
+
+body {
+    margin: 0;
     font-size: 1rem;
     font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-h1{
+
+h1 {
     color: blue;
     text-align: center;
     font-size: 3rem;
 }
-h2{
+
+h2 {
     text-align: center;
 }
-.contenedor{
+
+.contenedor {
     width: 60rem;
     margin: 0 auto;
 }
-.menu{
+
+.menu {
     background-color: aqua;
 }
-.menu_ppal{
+
+.menu_ppal {
     display: flex;
     justify-content: space-between;
 }
-.menu_ppal a{
+
+.menu_ppal a {
     color: black;
     font-size: 2rem;
     text-decoration: none;
 }
-.extras{
+
+.extras {
     background-color: aqua;
     color: black;
 }
